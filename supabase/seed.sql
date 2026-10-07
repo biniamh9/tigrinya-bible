@@ -1,0 +1,2 @@
+-- Intentionally empty. Add licensed Bible translations and reviewed content
+-- through separate, provenance-aware seed files in a future feature.
