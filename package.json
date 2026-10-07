@@ -11,6 +11,9 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "test": "tsx --test scripts/bible/**/*.test.ts",
+    "bible:validate": "tsx scripts/bible/validate-chapter.ts",
+    "bible:import": "tsx scripts/bible/import-bible.ts",
     "supabase:start": "supabase start",
     "supabase:stop": "supabase stop",
     "supabase:reset": "supabase db reset",
@@ -33,6 +36,7 @@
     "eslint-config-next": "^16.4.0",
     "supabase": "^2.120.0",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3"
   }
 }
