@@ -8,6 +8,7 @@ const items = [
   { href: "/bible", label: "Bible", glyph: "▤" },
   { href: "/groups", label: "Groups", glyph: "◉" },
   { href: "/prayer", label: "Prayer", glyph: "♡" },
+  { href: "/profile", label: "Profile", glyph: "○" },
 ] as const;
 
 export function MobileNavigation() {
@@ -15,7 +16,7 @@ export function MobileNavigation() {
 
   return (
     <nav aria-label="Primary" className="fixed inset-x-0 bottom-0 z-10 border-t border-[var(--border)] bg-white/95 backdrop-blur">
-      <ul className="mx-auto grid max-w-2xl grid-cols-4 px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2">
+      <ul className="mx-auto grid max-w-2xl grid-cols-5 px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2">
         {items.map((item) => {
           const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
           return (
